@@ -1,4 +1,19 @@
-# ImageGallery
+# ImageGallery Angular / JSON Project
+
+Angular Project - JSON Data from API and Display in HTML
+
+## Requirements:
+
+- Install Angular CLI.
+- Create an Angular Project Using Angular CLI.
+- Display JSON Data in HTML.
+- Using an HTTPClient.
+- Creating an image gallery app to fecth and display the image from an API.
+- Styling the app using CSS.
+- Make Image Gallery Load Automatically.
+
+
+### Note:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
