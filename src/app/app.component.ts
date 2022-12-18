@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -8,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit{
+  // truncated for brevity
   title = 'image-gallery';
   public data:any = [] // creates an empty array where images from API will be stored.
   constructor(private http: HttpClient) {
@@ -26,5 +27,9 @@ export class AppComponent {
       console.log(this.data)
 
     })
+  }
+
+  ngOnInit() {
+    this.getData()
   }
 }

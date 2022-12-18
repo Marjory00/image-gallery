@@ -1,19 +1,22 @@
 
 <div style="text-align:center">
   <h1>
-    Welcome!
+    Welcome to our Image Gallery!
   </h1>
 
 <!-- Truncated for brevity -->
 <button (click)="getData()">Fetch Data</button>
 </div>
 
+
 <!-- The code to display images -->
-<div *ngFor="let image of data" style="text-align:center">
+<div class="gallery" *ngFor="let image of data">
 <!-- *ngFor directs a loop through all content in date (image in this case) and renders all the item in the list. -->
-<h3>
-  {{ image.title }}
+<a target="_blank" [href]="image.href">
+  <img [src]="image.thumbnailUrl" width="300" height="200">
+</a>
+<div class="desc">{{image.title}}</div>
+
 <!-- The {{ image.title }} uses string interpolation to bind the image title to the <h3> tag. -->
-</h3>
-<img width="200" alt="thumbnail" [src]="image.thumbnailUrl">
+
 </div>
